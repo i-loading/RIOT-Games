@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+
+700&display=swap");
+@font-face {
+  font-family: "Druk Wide";
+  font-display: swap;
+  src: url("../fonts/Druk Wide Bold.woff") format("woff"), url("../fonts/Druk Wide Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Druk Wide";
+  font-display: swap;
+  src: url("../fonts/Druk Wide Medium.woff") format("woff"), url("../fonts/Druk Wide Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+/* Main page customize */
+
+header {
+  background: #1F2326;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-wrapper .menu .logo {
+  padding: 30px 56px 30px 48px;
+}
+
+.header-wrapper .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-wrapper .menu ul li {
+  margin-right: 33px;
+}
+
+.header-wrapper .menu ul li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-wrapper .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 64px;
+}
+
+.header-wrapper .account .name {
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 12px;
+}
+
+@-webkit-keyframes myImg {
+  0% {
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes myImg {
+  0% {
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.main-section {
+  background: url(../img/index/bg.png) no-repeat center top/cover;
+}
+
+.main-section .players {
+  padding-top: 75px;
+  padding-bottom: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.main-section .players .player {
+  position: relative;
+}
+
+.main-section .players .player h2 {
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  font-family: "Druk Wide";
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: 0.1em;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  z-index: 10;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.main-section .players .player span {
+  color: #FF4656;
+  font-family: "Druk Wide";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.1em;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+  z-index: 10;
+  top: 20px;
+  white-space: nowrap;
+}
+
+.main-section .players .player .player-wrapper {
+  width: 291px;
+  height: 654px;
+  position: relative;
+  background: #1F2326;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: 2px solid #1F2326;
+}
+
+.main-section .players .player .player-wrapper:hover {
+  background: #F8F8F8;
+  border: 2px solid #1F2326;
+}
+
+.main-section .players .player .player-wrapper:hover h2 {
+  -webkit-text-stroke: 2px #000;
+}
+
+.main-section .players .player .player-wrapper:hover + .abilities {
+  background: #FFFFFF;
+  border: 2px solid #1F2326;
+}
+
+.main-section .players .player .player-wrapper:hover + .abilities path {
+  fill: #1F2326;
+}
+
+.main-section .players .player .player-wrapper:hover img {
+  -webkit-animation: myImg 0.4s ease-in 0.01s;
+  animation: myImg 0.4s ease-in 0.01s;
+}
+
+.main-section .players .player .player-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.main-section .players .player .abilities {
+  bottom: -10px;
+  right: -15px;
+  z-index: 10;
+  position: absolute;
+  padding: 13px 28px;
+  width: 291px;
+  height: 73px;
+  background: #1F2326;
+  border: 2px solid #F8F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.main-section .players .player .abilities:hover {
+  background: #F8F8F8;
+  border: 2px solid #1F2326;
+}
+
+.main-section .players .player .abilities:hover h2 {
+  -webkit-text-stroke: 2px #000;
+}
+
+.main-section .players .player .abilities:hover path {
+  fill: #1F2326;
+}
+
+.skill-section .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.skill-section .skills .skill {
+  background: #F8F8F8;
+  border: 2px solid #000000;
+  padding: 10px 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 480px;
+  height: 165px;
+}
+
+.skill-section .skills .skill::before {
+  content: '';
+  display: block;
+  width: 105px;
+  height: 100px;
+  background: #FF4656;
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  z-index: 20;
+}
+
+.skill-section .skills .skill .big-img {
+  width: 20%;
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+}
+
+.skill-section .skills .skill .info {
+  z-index: 20;
+}
+
+.skill-section .skills .skill .info h3 {
+  font-family: "Druk Wide";
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #C4C4C4;
+}
+
+.skill-section .skills .skill .info span {
+  font-family: "Druk Wide";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.skill-section .skills .skill .info p {
+  white-space: wrap;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #1F2326;
+}
+
+.skill-section .skills .more {
+  background: #F8F8F8;
+  border: 2px solid #000000;
+  width: 145px;
+  height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.skill-section .skills .more .triangle {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 15px solid #1F2326;
+  border-bottom: 7px solid transparent;
+}
+
+footer {
+  background: #fff;
+  height: 60px;
+  margin-top: -40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .header-wrapper .menu ul {
+    display: none;
+  }
+
+  .main-section .players {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .skill-section .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main-section .players .player {
+    margin: 40px 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .header-wrapper .account {
+    display: none;
+  }
+
+  .skill-section .skills .skill {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+}
